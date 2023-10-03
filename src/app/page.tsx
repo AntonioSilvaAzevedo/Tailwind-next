@@ -144,9 +144,9 @@ export default function Home() {
               Portfolio projects
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">Share a few snippets of your work.</span>
             </label>
-            <FileInput.Root >
-              <FileInput.Trigger />
-              <FileInput.Control />
+            <FileInput.Root  >
+              <FileInput.Trigger  />
+              <FileInput.Control multiple />
             </FileInput.Root> 
           </div>
 
