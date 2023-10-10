@@ -1,5 +1,8 @@
+"use client"
+
 import { Mail } from "lucide-react";
 import * as FileInput from './components/Form/FileInput';
+import { Select } from "./components/Form/Select";
 import * as Input from "./components/Input";
 import SettingsTabs from "./components/SettingTabs";
 
@@ -108,9 +111,7 @@ export default function Home() {
               >
               Country
             </label>
-            <Input.Root>
-              <Input.Control id="country" defaultValue="CEO" />
-            </Input.Root>
+           <Select />
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -146,6 +147,7 @@ export default function Home() {
             </label>
             <FileInput.Root  >
               <FileInput.Trigger  />
+              <FileInput.FileList />
               <FileInput.Control multiple />
             </FileInput.Root> 
           </div>
